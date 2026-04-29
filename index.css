@@ -7,7 +7,8 @@
 
 /* Backgroung-image positioning of center to capture the full image. */
 .page-hero-intro {
-    margin: 3rem 2rem;
+    margin: 4rem;
+    border-radius: 10px;
     height: 70vh;
     background-image: url(./sun-north-view.jpg);
     background-repeat: no-repeat;
@@ -28,7 +29,8 @@
 .page-hero-intro a {
     border: 2px solid black;
     padding: 10px 15px;
-    border-radius: 30px;background-color: aqua;
+    border-radius: 30px;
+    background-color: aqua;
     text-decoration: none;
     
 }
