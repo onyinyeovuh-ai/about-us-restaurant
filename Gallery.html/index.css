@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open sans" sans-serif;
+}
+
+.page-hero-intro {
+    margin: 4rem;
+    border-radius: 10px;
+    height: 70vh;
+    background-image: url(./casa\ interior\ view.jpg);
+    position: relative;
+    color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.page-hero-intro p {
+    font-family: "open sans";
+    font-size: 2;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.page-hero-intro a {
+    border: 2px solid black;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    background-color: aqua;
+    text-decoration: none;
+}
+
+.page-hero-intro a:hover {
+    text-decoration: underline;
+    background-color: brown;
+    transform: skew(30deg);
+}
+
+/* food dishes */
+.gallery {
+    background-color: blanchedalmond;
+    margin: 4rem;
+    padding: 50px;
+    
+}
+
+.gallery h2,
+.gallery h3 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.gallery h3 {
+    margin-top: 1rem;
+}
+
+.gallery-dishes {
+    background-color: #72BAA9;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+    padding: 25px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-dishes img {
+    width: 100%;
+    height: 70%;
+    object-fit: center;
+    transition: 0.3s ease-in-out;
+}
+
+.gallery-dishes img:hover {
+    scale: 1.05;
+}
+
+/* Chef's at work section*/
+.chef-work {
+    background-color: blanchedalmond;
+    margin: 4rem;
+    padding: 40px;
+}
+
+.chef-work h3,
+.chef-work h4 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.chef-at-work {
+    background-color: #72BAA9;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+    padding: 25px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.chef-at-work img {
+    width: 100%;
+    height: 70%;
+    object-fit: center;
+    transition: 0.3s ease-in-out;
+}
+
+.chef-at-work img:hover {
+    scale: 1.05;
+}
+
+/* Restaurant / Dining Atmosphere*/
+.Restaurant {
+    margin: 4rem;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    padding: 40px;
+    text-align: center;
+}
+
+.r-interiors {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+    padding: 25px 20px;
+}
+
+.Restaurant h3,
+.Restaurant h4 {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+
+.r-interiors img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.r-interiors img:hover {
+    scale: 1.05;
+}
+
+@media (max-width: 768px) {
+    .gallery-dishes,
+    .chef-at-work,
+    .r-interiors {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
+
+@media (max-width: 480px) {
+    .gallery-dishes,
+    .chef-at-work,
+    .r-interiors {
+        grid-template-columns: 1fr;
+    } 
+}
